@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SuperBASIC.Functions
 {
-	class Multiply : IFunction
+	public class Multiply : IFunction
 	{
 		float IFunction.Apply(List<BasicNumber> arguments)
 		{

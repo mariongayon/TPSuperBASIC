@@ -5,12 +5,12 @@ using System.Text;
 namespace SuperBASIC.Functions
 {
 #if MEMORY
-	static class Memory
+	static public class Memory
 	{
 		internal static float[] memory = new float[Int16.MaxValue];
 
-		internal static float MemoryGet(Int16 pos) => memory[pos];
-		internal static float MemorySet(Int16 pos, float value)
+		public static float MemoryGet(Int16 pos) => memory[pos];
+		public static float MemorySet(Int16 pos, float value)
 		{
 			memory[pos] = value;
 			return value;
@@ -30,7 +30,7 @@ namespace SuperBASIC.Functions
 	}
 
 
-	class MemoryLoad : IFunction
+	public class MemoryLoad : IFunction
 	{
 		float IFunction.Apply(List<BasicNumber> arguments)
 		{
@@ -42,7 +42,7 @@ namespace SuperBASIC.Functions
 			throw new Memory.BadMemoryAccess("Could not access requested memory");
 		}
 	}
-	class MemoryStore : IFunction
+	public class MemoryStore : IFunction
 	{
 		float IFunction.Apply(List<BasicNumber> arguments)
 		{

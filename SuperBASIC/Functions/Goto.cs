@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SuperBASIC.Functions
 {
-	class Goto : IFunction
+	public class Goto : IFunction
 	{
 		public float Apply(List<BasicNumber> arguments)
 		{
@@ -13,7 +13,7 @@ namespace SuperBASIC.Functions
 			return arguments[0].runtime.register;
 		}
 	}
-	class JumpZero : IFunction
+	public class JumpZero : IFunction
 	{
 		public float Apply(List<BasicNumber> arguments)
 		{

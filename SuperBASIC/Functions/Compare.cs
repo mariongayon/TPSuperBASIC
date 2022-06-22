@@ -4,12 +4,11 @@ using System.Text;
 
 namespace SuperBASIC.Functions
 {
-	class Print : IFunction
+	public class Compare : IFunction
 	{
 		float IFunction.Apply(List<BasicNumber> arguments)
 		{
-			Console.WriteLine(arguments[0]);
-			return 0f;
+			return arguments[0] == arguments[1] ? 1 : 0;
 		}
 	}
 }
