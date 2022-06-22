@@ -1,97 +1,78 @@
-﻿//Matt
+﻿//Matt Math.Sin(
+
 using System;
 
 
 
-class SinCos
-
+class Sin
 {
 
-    public static void Main()
+
+
+    // Main Method
+
+    public static void Main(String[] args)
 
     {
 
-        Console.WriteLine(
-
-            "This example of trigonometric " +
-
-            "Math.Sin( double ), Math.Cos( double ), and Math.SinCos( double )\n" +
-
-            "generates the following output.\n");
-
-        Console.WriteLine(
-
-            "Convert selected values for X to radians \n" +
-
-            "and evaluate these trigonometric identities:");
-
-        Console.WriteLine("   sin^2(X) + cos^2(X) == 1\n" +
-
-                           "   sin(2 * X) == 2 * sin(X) * cos(X)");
-
-        Console.WriteLine("   cos(2 * X) == cos^2(X) - sin^2(X)");
-
-        Console.WriteLine("   cos(2 * X) == cos^2(X) - sin^2(X)");
+        double a = 30;
 
 
 
-        UseSineCosine(15.0);
+        // converting value to radians
 
-        UseSineCosine(30.0);
-
-        UseSineCosine(45.0);
+        double b = (a * (Math.PI)) / 180;
 
 
 
-        Console.WriteLine(
+        // using method and displaying result
 
-            "\nConvert selected values for X and Y to radians \n" +
+        Console.WriteLine(Math.Sin(b));
 
-            "and evaluate these trigonometric identities:");
-
-        Console.WriteLine("   sin(X + Y) == sin(X) * cos(Y) + cos(X) * sin(Y)");
-
-        Console.WriteLine("   cos(X + Y) == cos(X) * cos(Y) - sin(X) * sin(Y)");
+        a = 45;
 
 
 
-        UseTwoAngles(15.0, 30.0);
+        // converting value to radians
 
-        UseTwoAngles(30.0, 45.0);
-
-
-
-        Console.WriteLine(
-
-            "\nWhen you have calls to sin(X) and cos(X) they \n" +
-
-            "can be replaced with a single call to sincos(x):");
+        b = (a * (Math.PI)) / 180;
 
 
 
-        UseCombinedSineCosine(15.0);
+        // using method and displaying result
 
-        UseCombinedSineCosine(30.0);
+        Console.WriteLine(Math.Sin(b));
 
-        UseCombinedSineCosine(45.0);
+        a = 60;
+
+
+
+        // converting value to radians
+
+        b = (a * (Math.PI)) / 180;
+
+
+
+        // using method and displaying result
+
+        Console.WriteLine(Math.Sin(b));
+
+        a = 90;
+
+
+
+        // converting value to radians
+
+        b = (a * (Math.PI)) / 180;
+
+
+
+        // using method and displaying result
+
+        Console.WriteLine(Math.Sin(b));
 
     }
 
-    private static void UseSineCosine(double v)
-    {
-        throw new NotImplementedException();
-    }
-
-    private static void UseTwoAngles(double v1, double v2)
-    {
-        throw new NotImplementedException();
-    }
-
-    private static void UseCombinedSineCosine(double v)
-    {
-        throw new NotImplementedException();
-    }
 }
 
-    
 
