@@ -1,2 +1,2 @@
-﻿REM 2
+﻿REM 4 2
 PRINT $
