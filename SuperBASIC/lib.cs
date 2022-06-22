@@ -1,4 +1,4 @@
 ﻿//Matt
-internal class lib
+internal class Lib
 {
 }
