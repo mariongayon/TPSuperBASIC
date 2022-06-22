@@ -25,6 +25,7 @@ namespace SuperBASIC
 				lib.AddFunction(new Functions.Arcsin(), 1, "ARCSIN");
 				lib.AddFunction(new Functions.Rem(), 2, "REM");
 				lib.AddFunction(new Functions.Rem(), 4, "ACCUMULATE");
+				lib.AddFunction(new Functions.Cylinder_vol(), 2, "CYLINDER_VOL");
 				Runtime r = new Runtime(lib);
 				if (args.Length <= 1)
 				{

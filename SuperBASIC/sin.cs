@@ -3,7 +3,6 @@ using SuperBASIC;
 using System;
 
 
-
 class SinCos
 
 {
@@ -94,4 +93,5 @@ class SinCos
         throw new NotImplementedException();
     }
 }
+
 
