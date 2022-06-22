@@ -6,13 +6,13 @@ using System;
 
 
 
-class Sin
+public class Sin
 {
 
 
 
- 
-    public static void Main(String[]arg)
+
+    public static void Main(String[] arg)
 
     {
 
