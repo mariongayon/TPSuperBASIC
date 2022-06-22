@@ -1,5 +1,4 @@
 ﻿//Matt
-using SuperBASIC;
 using System;
 
 
@@ -8,10 +7,9 @@ class SinCos
 
 {
 
-    public static IFunction Main()
+    public static void Main()
 
     {
-        lib add IFunction;
 
         Console.WriteLine(
 
@@ -84,15 +82,16 @@ class SinCos
         throw new NotImplementedException();
     }
 
-    private static void UseCombinedSineCosine(double v)
+    private static void UseTwoAngles(double v1, double v2)
     {
         throw new NotImplementedException();
     }
 
-    private static void UseTwoAngles(double v1, double v2)
+    private static void UseCombinedSineCosine(double v)
     {
         throw new NotImplementedException();
     }
 }
 
+    
 
