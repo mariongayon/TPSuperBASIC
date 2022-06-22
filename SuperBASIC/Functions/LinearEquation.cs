@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SuperBASIC.Functions
 {
-    class LinearEquation : IFunction
+    public class LinearEquation : IFunction
     {
         float IFunction.Apply(List<BasicNumber> arguments)
         {
