@@ -1,76 +1,47 @@
 ﻿//Matt Math.Sin
 
-
-
 using System;
 
 
 
-public class Sin
+namespace Sin
+
 {
 
-
-
-
-    public static void Main(String[] arg)
+    class Program
 
     {
 
-        double a = 30;
+        public static double Sinus(double X)
+
+        {
+
+            double R = X * X, S = 42.0;
+
+            for (byte I = 10; I >= 1; I--) S = 4.0 * I - 2.0 + (-R) / S;
+
+            return 2.0 * X * S / (R + S * S);
+
+        }
 
 
 
-        // converting value to radians
+        static void Main(string[] args)
 
-        double b = (a * (Math.PI)) / 180;
+        {
 
+            double I = 0;
 
+            while (I < Math.PI)
+            {
 
-        // using method and displaying result
+                Console.WriteLine("Sinus " + I + " " + Math.Sin(I) + " " + Sinus(I));
 
-        Console.WriteLine(Math.Sin(b));
+                I += 0.1;
 
-        a = 45;
+            }
 
-
-
-        // converting value to radians
-
-        b = (a * (Math.PI)) / 180;
-
-
-
-        // using method and displaying result
-
-        Console.WriteLine(Math.Sin(b));
-
-        a = 60;
-
-
-
-        // converting value to radians
-
-        b = (a * (Math.PI)) / 180;
-
-
-
-        // using method and displaying result
-
-        Console.WriteLine(Math.Sin(b));
-
-        a = 90;
-
-
-
-        // converting value to radians
-
-        b = (a * (Math.PI)) / 180;
-
-
-
-        // using method and displaying result
-
-        Console.WriteLine(Math.Sin(b));
+        }
 
     }
 
