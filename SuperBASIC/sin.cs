@@ -7,7 +7,7 @@ class SinCos
 
 {
 
-    public static IFunction Main()
+    /*public static IFunction Main()
 
     {
         lib add IFunction;
@@ -91,7 +91,7 @@ class SinCos
     private static void UseTwoAngles(double v1, double v2)
     {
         throw new NotImplementedException();
-    }
+    }*/
 }
 
 
