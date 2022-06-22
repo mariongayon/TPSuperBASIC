@@ -1,21 +1,13 @@
 ﻿//Matt Math.Sin
 
-
-
-using System;
-
-
-
-class Sin
+internal class SinBase
 {
 
 
 
-   
 
-#pragma warning disable IDE0060 // Supprimer le paramètre inutilisé
-    public static void Main(String[] arg)
-#pragma warning restore IDE0060 // Supprimer le paramètre inutilisé
+
+    public static void Main(String[])
 
     {
 
@@ -76,9 +68,4 @@ class Sin
         Console.WriteLine(Math.Sin(b));
 
     }
-
 }
-
-
-
-
