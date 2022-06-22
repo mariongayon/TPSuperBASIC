@@ -9,9 +9,9 @@ class Sin
 
 
 
-    // Main Method
+   
 
-    public static void Main(String[] args)
+    public static void Main(String[]
 
     {
 
