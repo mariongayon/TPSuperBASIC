@@ -13,9 +13,13 @@ class Sin
 
    
 
+
 #pragma warning disable IDE0060 // Supprimer le paramètre inutilisé
     public static void Main(String[] arg)
 #pragma warning restore IDE0060 // Supprimer le paramètre inutilisé
+=======
+    public static void Main(String[]
+>>>>>>> c9f5823f332b25f02801097b45ab75270b292877
 
     {
 
