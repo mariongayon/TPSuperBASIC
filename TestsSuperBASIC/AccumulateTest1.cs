@@ -15,14 +15,15 @@ namespace TestsSuperBASIC
             Mock.MockPrint print = new Mock.MockPrint();
             Library lib = new Library();
 
-            lib.AddFunction(new SuperBASIC.Functions.Accumulate(), 4, "ACCUMULATE");
+            lib.AddFunction(new SuperBASIC.Functions.MemoryStore(), 2, "MEMSTORE");
+            lib.AddFunction(new SuperBASIC.Functions.Accumulate(), 2, "ACCUMULATE");
             lib.AddFunction(print, 1, "PRINT");
 
             Runtime r = new Runtime(lib);
             r.OpenFile(Directory.GetCurrentDirectory() + "\\CasDeTest\\AccumulateTest1.txt");
             r.Run();
 
-            Assert.AreEqual((float)print.output[0], 0);
+            Assert.AreEqual((float)print.output[0], 6);
         }
     }
 }
